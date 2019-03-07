@@ -26,7 +26,7 @@ public class AccActivity extends AppCompatActivity implements SensorEventListene
         tv_z = (TextView) findViewById(R.id.txt_z);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        sensor_acc = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
+        sensor_acc = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener(this, sensor_acc, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
